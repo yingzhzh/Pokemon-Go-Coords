@@ -1,0 +1,21 @@
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+CREATE TABLE IF NOT EXISTS `spawns` (
+  `ID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Spawn ID',
+  `channel` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Discord channel name',
+  `server` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Discord server name',
+  `userId` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Chat message author''s Discord ID',
+  `name` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Pokémon name',
+  `lat` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Latitude',
+  `lon` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Longitude',
+  `IV` int(3) DEFAULT NULL COMMENT 'Pokémon IV',
+  `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=5465 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
