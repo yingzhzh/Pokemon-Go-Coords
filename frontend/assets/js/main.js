@@ -4,7 +4,7 @@ window._filter = window._filter || 'all';
 // Settings
 var max_entries = 50;
 var domain = "spawns.sebastienvercammen.be";
-var port = 49002;
+var port = 49005;
 
 /* Helpers */
 
